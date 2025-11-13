@@ -285,7 +285,7 @@ int main(int argc, char *argv[])
     ofstream cFile(outputFile, ios::out | ios::trunc);
     cFile << "SUBDOMAIN=" << subdomain << endl;
     cFile << "USO=" << uso << endl;
-    cFile << "timestamp(ms);device;id;energia(J);potencia(W);" << endl;
+    cFile << "timestamp(ms);device;id;energy(J);power(W);" << endl;
 
     clock_gettime(CLOCK_MONOTONIC, &tactual);
     tinicio = tactual;
